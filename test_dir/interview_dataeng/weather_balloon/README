@@ -1,0 +1,5 @@
+generate_data_batch.ipynb: notebook for generate simulated data
+
+EDA.ipynb: notebook for EDA process on simulated data
+
+Data generated is stored in PostgreSQL server

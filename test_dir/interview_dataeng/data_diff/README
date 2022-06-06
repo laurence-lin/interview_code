@@ -1,0 +1,16 @@
+1. Enter start date and end date, then calculate the date difference
+
+Run code: python3 cnt_days.py
+
+Stdin: start date: ex. 31/12/2011
+Stdin: end date: ex. 31/10/2022
+
+Stdout: shows date difference: Date difference: <date difference>
+
+2. Provide test case, calculate date difference for display
+
+Test case location: test.txt
+
+Run code: python3 test.py
+
+Stdout: display test case start date & end date for each case, and date difference
