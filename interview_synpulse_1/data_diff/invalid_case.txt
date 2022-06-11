@@ -1,6 +1,9 @@
-Not match type DD/MM/YYYY
-Date valud negative
-Day > 29 invalid for month February
-Month > 12 invalid
-Day > 31 invalid
-Year < 1901 OR Year > 2999
+Not match type DD/MM/YYYY              | 05-05-2011
+Date valud negative                    | -04/03/2011
+Day > 29 invalid for month February    | 30/02/2009
+Month > 12 invalid                     | 12/13/1992
+Day > 31 invalid                       | 33/10/1922
+Year < 1901 OR Year > 2999             | 10/10/1900 | 10/10/3000
+Start=end                              | 10/10/2000, 10/10/2000
+start - end = 1                        | 10/10/2000, 11/10/2000
+start < end                            | 10/10/2000, 09/10/2000

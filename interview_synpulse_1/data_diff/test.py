@@ -21,7 +21,16 @@ for i in range(len(df)):
     validate_date(end_dt, False)
 
     cnt_diff = cnt_date_diff(start_dt, end_dt)
-    print("Start date: {}  End date: {}  Day difference: {}".format(start_dt, end_dt, cnt_diff))
+
+    start_t = datetime.strptime(start_dt, "%d/%m/%Y")
+    end_t = datetime.strptime(end_dt, "%d/%m/%Y")
+    date_diff = abs((end_t - start_t).days)
+    if date_diff <= 2: # date difference = 0 OR 1, equals 0
+        date_diff = 0
+    else:
+        date_diff -= 1
+
+    print("Start date: {}  End date: {}  Day difference: {} Datetime Library diff: {}".format(start_dt, end_dt, cnt_diff, date_diff))
 
     # Compare date difference calculated by library
-    
+
