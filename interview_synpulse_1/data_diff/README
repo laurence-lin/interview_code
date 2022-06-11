@@ -11,6 +11,6 @@ Stdout: shows date difference: Date difference: <date difference>
 
 Test case location: test.txt
 
-Run code: python3 test.py
+Run code: python3 test.py <test.txt>
 
 Stdout: display test case start date & end date for each case, and date difference
