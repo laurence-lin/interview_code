@@ -1,9 +1,13 @@
 from cnt_days import validate_date, cnt_date_diff
 import pandas as pd
 import os
+import sys
+from datetime import datetime
 
 #txt_file = "/Users/linyanliang/experiment/interview2022/synpous_dataeng/data_diff"
-df = pd.read_csv( "test.txt", sep=',', header=None)
+test_case = sys.argv[1]
+print("Read test case from:", test_case)
+df = pd.read_csv( test_case, sep=',', header=None)
 df.columns = ["start_dt", "end_dt"]
 
 print("This program test the test case in test.txt, and calculate date difference")
@@ -18,3 +22,6 @@ for i in range(len(df)):
 
     cnt_diff = cnt_date_diff(start_dt, end_dt)
     print("Start date: {}  End date: {}  Day difference: {}".format(start_dt, end_dt, cnt_diff))
+
+    # Compare date difference calculated by library
+    
